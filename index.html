@@ -1,75 +1,45 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تهنئة بالنجاح 🎉</title>
+    <title>🎁 مفاجأة لهنا</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div id="welcome" class="page">
-        <h1>🎓 ألف مبروك النجاح! 🎉</h1>
+    <!-- شاشة البداية -->
+    <div id="startScreen">
+
+        <h1>🎉 مبروك يا هنا 🎉</h1>
 
         <p>
-            اجتهدت... وتعبك ما راحش هدر.
-            عندي ليك رسالة صغيرة ❤️
+            عندي ليكي مفاجأة صغيرة...
         </p>
 
-        <button onclick="nextPage()">
-            اضغط هنا
-        </button>
-    </div>
-
-    <div id="message" class="page hidden">
-
-        <h2>رسالة خاصة</h2>
-
-        <p>
-            مبروك النجاح! 🌸<br><br>
-
-            أتمنى يكون النجاح ده بداية لأيام كلها إنجازات،
-            وربنا يحققلك كل أحلامك،
-            وتفضل دايمًا ناجح ومتفوق.
-        </p>
-
-        <button onclick="showGallery()">
-            التالي
+        <button id="startBtn">
+            🎁 ابدأ المفاجأة
         </button>
 
     </div>
 
-    <div id="gallery" class="page hidden">
+    <!-- لعبة البازل -->
+    <div id="gameScreen">
 
-        <h2>📸 ذكريات جميلة</h2>
-
-        <div class="images">
-
-            <img src="images/1.jpg">
-            <img src="images/2.jpg">
-            <img src="images/3.jpg">
-
-        </div>
-
-        <button onclick="finish()">
-            الرسالة الأخيرة
-        </button>
+        <div id="puzzle"></div>
 
     </div>
 
-    <div id="final" class="page hidden">
+    <!-- الموسيقى -->
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
 
-        <h1>🎊 مرة تانية... ألف مبروك 🎊</h1>
-
-        <p>
-            استمتع بفرحتك،
-            ولسه القادم أجمل بإذن الله ❤️
-        </p>
-
-    </div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
